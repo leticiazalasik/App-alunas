@@ -6,9 +6,9 @@ Repositório criado em sala de aula.
 --
 ## 👨‍💻️ Tecnologias Utilizadas
 Esse projeto foi criado utilizando as tecnologias:
-:small_blue_diamond:  HTML 
-:small_blue_diamond: SASS - CSS 
-:small_blue_diamond: JavaScript 
+### :small_blue_diamond:  HTML 
+### :small_blue_diamond: SASS - CSS 
+### :small_blue_diamond: JavaScript 
 --
 #### Editor
 [Visual Studio Code](https://code.visualstudio.com/)
