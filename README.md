@@ -1,19 +1,17 @@
 # Aplicativo de alunas
 Repositório criado em sala de aula. 
-Contém tela inicial de login, na página seguinte lista de alunas. 
-Em seguida você pode clicar no perfil da aluna que desejar acessar. 
----
+1. Contém tela inicial de login que faz a validacáo de e-mail e senha. 
+2. Se estiver correto vai para página seguinte que contém a lista de alunas. 
+3. Em seguida você pode clicar no perfil da aluna que desejar acessar. 
+--
 ## 👨‍💻️ Tecnologias Utilizadas
 Esse projeto foi criado utilizando as tecnologias:
-HTML 
-SASS - CSS 
-JavaScript 
+## :small_blue_diamond:  HTML 
+## :small_blue_diamond: SASS - CSS 
+## :small_blue_diamond: JavaScript 
 - 
 ### Editor
-- [Visual Studio Code](https://code.visualstudio.com/)
----
-## 🔮 Funcionalidades Futuras
-- [x] A
-- [ ] B
-- [ ] C
----
+[Visual Studio Code](https://code.visualstudio.com/)
+--
+
+É um dos meus primeiros projetos, então fico aberta a sugestões! 
