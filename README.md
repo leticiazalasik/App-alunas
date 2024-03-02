@@ -10,7 +10,7 @@ Esse projeto foi criado utilizando as tecnologias:
 ### :small_blue_diamond: SASS - CSS 
 ### :small_blue_diamond: JavaScript 
 --
-#### Editor
+## Editor
 [Visual Studio Code](https://code.visualstudio.com/)
 --
 
