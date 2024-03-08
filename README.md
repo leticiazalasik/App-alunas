@@ -14,4 +14,6 @@ Esse projeto foi criado utilizando as tecnologias:
 [Visual Studio Code](https://code.visualstudio.com/)
 
 
-É um dos meus primeiros projetos, então fico aberta a sugestões! 
+*Observação: Para acessar o sistema a credencial é: 
+e-mail: leticiazalasik@gmail.com
+senha: abacaxi123
