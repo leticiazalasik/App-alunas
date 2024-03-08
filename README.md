@@ -10,9 +10,6 @@ Esse projeto foi criado utilizando as tecnologias:
 ### :small_blue_diamond: SASS - CSS 
 ### :small_blue_diamond: JavaScript 
 
-## Editor
-[Visual Studio Code](https://code.visualstudio.com/)
-
 
 *Observação: Para acessar o sistema a credencial é: 
 e-mail: leticiazalasik@gmail.com
