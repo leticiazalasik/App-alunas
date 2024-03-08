@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.divGeral{
+    width: 100%;
+    height: 100%;
+   }
+
+.cabecalho{        
+    color: white;
+        background-color:rgb(218, 0, 181);
+        width: 100%;
+        height: 100px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 30px;
+        display: flex; /* Torna os spans flexíveis para ficarem lado a lado */
+        align-items: center; /* Alinha os itens verticalmente */
+        justify-content: space-between; 
+      
+      
+    }
+
+    .cabecalho span{
+      margin-top: 1%; /* Ou qualquer valor desejado */
+      margin-left: 2%;
+      margin-right: 8%;
+    
+          }
+    
+.subtitulo{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(74, 71, 71);
+    padding-left: 10%;
+    margin-top: 10%;
+    height: 50px;
+    width: 100%;
+}
+
+img{
+    width: 78%;
+    height: 60px;
+    padding: 10%;
+    border-radius: 15px;
+
+
+}
+.liImagem{
+    border-radius:10px;
+    width: 60%;
+    height: 60px;
+    background-color: rgb(218, 0, 181);
+    text-align: center;
+}
+
+td .liImagem{
+    margin: auto;
+}
+.botao-inicio{
+    border-radius:10px;
+    width: 30%;
+    height: 40px;
+    background-color:  rgb(0, 204, 255);
+    text-align: left;
+    display: inline;
+    color: white;
+    padding: 5px;
+
+}
+
+a{ 
+    text-decoration: none;
+}
+
+.trCabecalho{
+    background-color:  rgb(0, 204, 255);
+    text-align: center;
+    color: white;
+    }
+
+table,td,th {
+    border-collapse: collapse;
+  }
+  
+  
+tr{
+    border-bottom: 1px solid rgb(161, 161, 161);
+    height: 80px;
+
+}
+
+table{
+    margin-top: 0%;
+    margin-left: 12%;
+    width: 80%;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  
+  @media (min-width: 550px) {
+    img{
+        width: 78%;
+        height: 70px;
+        padding: 10%;
+        border-radius: 15px;
+    
+    
+    }
+    .liImagem{
+        border-radius:10px;
+        width: 50%;
+        height: 70px;
+    }
+
+    .subtitulo{
+        font-size: 25px;
+  }
+}
+
+@media (min-width: 550px) {
+   
+    .liImagem{
+       
+        width: 40%;
+    }
+}
