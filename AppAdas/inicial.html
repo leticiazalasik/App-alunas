@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Document</title>
+</head>
+<body>
+   
+<div class="divGeral">
+    <h1>AdasApp</h1>
+    
+    <label for=""> </label>
+    <input type="text" placeholder="exemplo@exemplo.com" class="input" id="username">
+
+    <label for=""> </label>
+    <input type="password" placeholder="********" class="input" id="password">
+
+
+    <button class="buttonInicial" onclick="validarEntrada()">Entrar</button>
+</div>
+
+</body>
+
+<script> 
+function validarEntrada() {
+    var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  if (username === "leticiazalasik@gmail.com" && password === "abacaxi123") {
+    // Redirecione para a outra página com um link âncora
+    window.location.href = "listaAlunas.html";
+  } else {
+    alert("Login ou senha incorretos");
+  }
+
+}
+
+</script>
+</html>
+

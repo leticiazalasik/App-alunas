@@ -1,0 +1,60 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(218, 0, 181);
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 12%;
+}
+
+input {
+  border-left: 8px solid rgb(0, 204, 255);
+  width: 85%;
+  height: 45px;
+  margin-bottom: 3%;
+}
+
+.divGeral {
+  display: flex;
+  flex-direction: column; /* Define a direção como coluna para os elementos empilharem verticalmente */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+.buttonInicial {
+  background-color: rgb(0, 204, 255);
+  color: white;
+  border: none;
+  width: 40%;
+  height: 45px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    margin-top: 30%;
+    margin-bottom: 15%;
+  }
+  input {
+    width: 85%;
+    height: 45px;
+    margin-bottom: 4%;
+  }
+  .buttonInicial {
+    width: 30%;
+    height: 30px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}/*# sourceMappingURL=estilo.css.map */
