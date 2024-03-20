@@ -1,8 +1,154 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+.divGeral {
+  width: 100%;
+  height: 896px;
+}
+
+.cabecalho {
+  color: white;
+  background-color: rgb(218, 0, 181);
+  width: 100%;
+  height: 80px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between;
+}
+
+.titulo {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 10%;
+  margin-bottom: 110px;
+  margin-bottom: 0px;
+}
+
+.cabecalho span {
+  margin-top: 1%; /* Ou qualquer valor desejado */
+  margin-left: 2%;
+  margin-right: 15%;
+}
+
+.liImagem {
+  border-radius: 10px;
+  width: 22%;
+  height: 50px;
+  background-color: rgb(0, 204, 255);
+  text-align: center;
+  margin-top: 7%;
+  display: inline;
+  color: white;
+  padding: 5px;
+}
+
+.infos {
+  margin-top: 5%;
+}
+
+.subtitulo {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(74, 71, 71);
+  text-align: center;
+  font-size: 25px;
+  margin-top: 8%;
+  margin-bottom: 3%;
+}
+
+.descricao {
+  font-size: 12px;
+  color: rgb(99, 98, 98);
+  width: 100%;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.imagem {
+  background-color: rgb(196, 192, 192);
+  width: 65%;
+  height: 250px;
+  border-radius: 60%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+table {
+  height: 60px;
+  width: 40%;
+  border: solid rgb(218, 0, 181) 1px;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 30%;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+table, td, th {
+  border-collapse: collapse;
+}
+
+.tdMedia {
+  width: 50%;
+  color: rgb(218, 0, 181);
+}
+
+.tdNota {
+  border-left: solid rgb(218, 0, 181) 1px;
+  width: 50%;
+  background-color: rgb(218, 0, 181);
+  color: white;
+}
+
+.infos .subtitulo {
+  margin: auto;
+}
+
+@media (min-width: 490px) {
+  .imagem {
+    width: 50%;
+    height: 300px;
+  }
+}
+@media (min-width: 800px) {
+  .imagem {
+    width: 40%;
+    height: 340px;
+  }
+}
+@media (min-width: 1050px) {
+  .imagem {
+    width: 30%;
+    height: 360px;
+  }
+}
+@media (min-width: 1460px) {
+  .imagem {
+    width: 25%;
+    height: 380px;
+  }
+}
+@media (min-width: 1460px) {
+  .imagem {
+    width: 22%;
+    height: 380px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 .divGeral {
@@ -10,15 +156,19 @@
   height: 100%;
 }
 
+.titulo {
+  margin-bottom: 0px;
+}
+
 .cabecalho {
   color: white;
   background-color: rgb(218, 0, 181);
   width: 100%;
-  height: 100px;
+  height: 80px;
   text-align: left;
   font-weight: bold;
   font-size: 30px;
-  display: flex; /* Torna os spans flexíveis para ficarem lado a lado */
+  display: flex;
   align-items: center; /* Alinha os itens verticalmente */
   justify-content: space-between;
 }
@@ -26,32 +176,36 @@
 .cabecalho span {
   margin-top: 1%; /* Ou qualquer valor desejado */
   margin-left: 2%;
-  margin-right: 8%;
+  margin-right: 15%;
 }
 
 .subtitulo {
   font-size: 15px;
   font-weight: bold;
   color: rgb(74, 71, 71);
-  padding-left: 10%;
-  margin-top: 10%;
-  height: 50px;
-  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 8%;
+  margin-bottom: 3%;
 }
 
 img {
-  width: 78%;
+  width: 80%;
   height: 60px;
-  padding: 10%;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .liImagem {
   border-radius: 10px;
-  width: 60%;
-  height: 60px;
+  border: none;
+  width: 30%;
+  height: 70px;
   background-color: rgb(218, 0, 181);
-  text-align: center;
+  display: block;
+}
+
+table {
+  border-color: #cecccc;
 }
 
 td .liImagem {
@@ -60,17 +214,14 @@ td .liImagem {
 
 .botao-inicio {
   border-radius: 10px;
-  width: 30%;
-  height: 40px;
+  width: 22%;
+  height: 50px;
   background-color: rgb(0, 204, 255);
-  text-align: left;
+  text-align: center;
+  margin-top: 7%;
   display: inline;
   color: white;
   padding: 5px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .trCabecalho {
@@ -99,24 +250,13 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-@media (min-width: 550px) {
-  img {
-    width: 78%;
-    height: 70px;
-    padding: 10%;
-    border-radius: 15px;
-  }
+@media (max-width: 950px) {
   .liImagem {
-    border-radius: 10px;
     width: 50%;
-    height: 70px;
-  }
-  .subtitulo {
-    font-size: 25px;
   }
 }
-@media (min-width: 550px) {
+@media (max-width: 550px) {
   .liImagem {
-    width: 40%;
+    width: 70%;
   }
 }/*# sourceMappingURL=estilo2.css.map */

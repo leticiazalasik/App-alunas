@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .divGeral {
@@ -26,8 +27,10 @@
   color: white;
   text-align: left;
   font-weight: bold;
-  font-size: 30px;
-  width: 100%;
+  font-size: 40px;
+  margin-top: 10%;
+  margin-bottom: 110px;
+  margin-bottom: 0px;
 }
 
 .cabecalho span {
@@ -38,24 +41,18 @@
 
 .liImagem {
   border-radius: 10px;
-  width: 30%;
-  height: 40px;
+  width: 22%;
+  height: 50px;
   background-color: rgb(0, 204, 255);
   text-align: center;
   margin-top: 7%;
-  margin-left: 40%;
   display: inline;
   color: white;
   padding: 5px;
-  margin-bottom: 10%;
-}
-
-a {
-  text-decoration: none;
 }
 
 .infos {
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .subtitulo {
@@ -64,6 +61,8 @@ a {
   color: rgb(74, 71, 71);
   text-align: center;
   font-size: 25px;
+  margin-top: 8%;
+  margin-bottom: 3%;
 }
 
 .descricao {
@@ -81,16 +80,16 @@ a {
   height: 250px;
   border-radius: 60%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 table {
   height: 60px;
-  width: 70%;
+  width: 40%;
   border: solid rgb(218, 0, 181) 1px;
   text-align: center;
-  margin-top: 20%;
-  margin-left: 15%;
+  margin-top: 5%;
+  margin-left: 30%;
   font-weight: bold;
   font-size: 25px;
 }
@@ -115,33 +114,33 @@ table, td, th {
   margin: auto;
 }
 
-@media (min-width: 500px) and (max-width: 620px) {
-  .imagem {
-    width: 55%;
-    height: 280px;
-  }
-}
-@media (min-width: 621px) and (max-width: 720px) {
+@media (min-width: 490px) {
   .imagem {
     width: 50%;
-    height: 290px;
+    height: 300px;
   }
 }
-@media (min-width: 721px) and (max-width: 870px) {
-  .imagem {
-    width: 45%;
-    height: 295px;
-  }
-}
-@media (min-width: 871px) and (max-width: 950px) {
+@media (min-width: 800px) {
   .imagem {
     width: 40%;
     height: 340px;
   }
 }
-@media (min-width: 951px) and (max-width: 2000px) {
+@media (min-width: 1050px) {
   .imagem {
-    width: 37%;
-    height: 370px;
+    width: 30%;
+    height: 360px;
+  }
+}
+@media (min-width: 1460px) {
+  .imagem {
+    width: 25%;
+    height: 380px;
+  }
+}
+@media (min-width: 1460px) {
+  .imagem {
+    width: 22%;
+    height: 380px;
   }
 }/*# sourceMappingURL=estilo3.css.map */

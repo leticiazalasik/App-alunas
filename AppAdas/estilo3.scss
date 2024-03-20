@@ -1,77 +1,130 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+$major-pink: rgb(218, 0, 181);
+$major-white: white;
+$major-blue: rgb(0, 204, 255);
+$text-color: rgb(74, 71, 71);
+$title-size: 40px;
+$subtitle-size: 25px;
+$font-size: 15px;
+
+@mixin padrao-botao {
+    border-radius: 10px;
+    border: solid rgb(110, 105, 105);
+    width: 22%;
+    height: 50px;
+    background-color: $major-blue;
+    text-align: center;
+    margin-top: 7%;
+    display: inline;
+    color: $major-white;
+    padding: 5px;
+    font-size: 25px;
+
 }
 
-.divGeral{
+@mixin botao-cabecalho {
+    border-radius: 10px;
+    width: 22%;
+    height: 50px;
+    background-color: $major-blue;
+    text-align: center;
+    margin-top: 7%;
+    display: inline;
+    color: $major-white;
+    padding: 5px;
+
+}
+
+@mixin configuracoes-padrao {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+@mixin cabecalho-style {
+    color: $major-white;
+    background-color: $major-pink;
     width: 100%;
-    height: 896px;
-}
-
-.cabecalho{        
-    color: white;
-        background-color:rgb(218, 0, 181);
-        width: 100%;
-        height: 80px;
-        text-align: left;
-        font-weight: bold;
-        font-size: 30px;
-        display: flex;
-        align-items: center; /* Alinha os itens verticalmente */
-        justify-content: space-between; 
-      
-    }
-
-.titulo{
-    color: white;
+    height: 80px;
     text-align: left;
     font-weight: bold;
     font-size: 30px;
-    width: 100%;
-  
+    display: flex;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    justify-content: space-between;
 }
 
-.cabecalho span{
-    margin-top: 1%; /* Ou qualquer valor desejado */
+@mixin titulo-style {
+    color: $major-white;
+    text-align: left;
+    font-weight: bold;
+    font-size: $title-size;
+    margin-top: 10%;
+    margin-bottom: 110px;
+
+}
+
+@mixin subtitulo {
+    font-size: $font-size;
+    font-weight: bold;
+    color: $text-color;
+    text-align: center;
+    font-size: $subtitle-size;
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+@mixin cabecalho-espacamento {
+    margin-top: 1%;
+    /* Ou qualquer valor desejado */
     margin-left: 2%;
     margin-right: 15%;
 }
 
+//Implementações: 
 
-.liImagem{
-    border-radius:10px;
-    width: 30%;
-    height: 40px;
-    background-color:  rgb(0, 204, 255);
-    text-align: center;
-    margin-top: 7%;
-    margin-left: 40%;
-    display: inline;
-    color: white;
-    padding: 5px;
-    margin-bottom: 10%;
+* {
+    @include configuracoes-padrao();
+}
+
+.divGeral {
+    width: 100%;
+    height: 896px;
+}
+
+.cabecalho {
+    @include cabecalho-style();
 
 }
 
-a{ 
-    text-decoration: none;
+.titulo {
+    @include titulo-style();
+    margin-bottom: 0px;
 }
 
-.infos{
-    margin-top: 7%;
-    
+.cabecalho span {
+    @include cabecalho-espacamento();
 }
 
-.subtitulo{
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(74, 71, 71);
-    text-align: center;
-    font-size: 25px;
+
+.liImagem {
+    @include botao-cabecalho();
 }
 
-.descricao{
+
+
+.infos {
+    margin-top: 5%;
+
+}
+
+.subtitulo {
+    @include subtitulo();
+}
+
+.descricao {
     font-size: 12px;
     color: rgb(99, 98, 98);
     width: 100%;
@@ -82,42 +135,44 @@ a{
 
 }
 
-.imagem{
-   background-color:rgb(196, 192, 192); 
-   width: 65%;
-   height: 250px;
-   border-radius: 60%;
-   margin:auto;
-   margin-top: 10%;
+.imagem {
+    background-color: rgb(196, 192, 192);
+    width: 65%;
+    height: 250px;
+    border-radius: 60%;
+    margin: auto;
+    margin-top: 5%;
 
 }
 
-table{
+table {
     height: 60px;
-    width: 70%;
-    border: solid rgb(218, 0, 181)1px;
+    width: 40%;
+    border: solid $major-pink 1px;
     text-align: center;
-    margin-top: 20%;
-    margin-left: 15%;
+    margin-top: 5%;
+    margin-left: 30%;
     font-weight: bold;
-    font-size: 25px;
+    font-size: $subtitle-size;
 
 }
 
-table,td,th{
+table,
+td,
+th {
     border-collapse: collapse;
 }
 
-.tdMedia{
+.tdMedia {
     width: 50%;
-color: rgb(218, 0, 181);
+    color: $major-pink;
 }
 
-.tdNota{
-    border-left: solid rgb(218, 0, 181)1px;
+.tdNota {
+    border-left: solid $major-pink 1px;
     width: 50%;
-    background-color: rgb(218, 0, 181);
-    color: white;
+    background-color: $major-pink;
+    color: $major-white;
 }
 
 
@@ -125,41 +180,38 @@ color: rgb(218, 0, 181);
 .infos .subtitulo {
     margin: auto;
 }
-@media (min-width: 500px) and (max-width: 620px) {
-    .imagem{
-        width: 55%;
-        height: 280px;
-    }
-}
 
-@media (min-width: 621px) and (max-width: 720px) {
-    .imagem{
+@media (min-width: 490px) {
+    .imagem {
         width: 50%;
-        height: 290px;
-
+        height: 300px;
     }
 }
 
-@media (min-width: 721px) and (max-width: 870px) {
-    .imagem{
-        width: 45%;
-        height: 295px;
-
-    }
-}
-
-@media (min-width: 871px) and (max-width: 950px){
-    .imagem{
+@media (min-width: 800px) {
+    .imagem {
         width: 40%;
         height: 340px;
-
     }
 }
 
-@media (min-width: 951px) and (max-width: 2000px){
-    .imagem{
-        width: 37%;
-        height: 370px;
+@media (min-width: 1050px) {
+    .imagem {
+        width: 30%;
+        height: 360px;
+    }
+}
 
+@media (min-width: 1460px) {
+    .imagem {
+        width: 25%;
+        height: 380px;
+    }
+}
+
+@media (min-width: 1460px) {
+    .imagem {
+        width: 22%;
+        height: 380px;
     }
 }

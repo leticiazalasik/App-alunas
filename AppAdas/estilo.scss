@@ -1,66 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import 'estilo3.scss';
+
+* {
+    @include configuracoes-padrao
 }
 
 body {
-    background-color: rgb(218, 0, 181);
+    background-color: $major-pink;
     width: 100%;
     height: 100%;
-    
+    display: flex;
+    align-items: center;
 }
 
-h1{
-    color: white;
-    margin-top: 10%;
-    margin-bottom: 12%;
+h1 {
+    @include titulo-style;
 }
 
 
-input{
-    border-left: 8px solid rgb(0, 204, 255);
+
+input {
+    border-left: 8px solid $major-white;
     width: 85%;
     height: 45px;
     margin-bottom: 3%;
+
+}
+
+.divGeral {
+    display: flex;
+    flex-direction: column;
+    /* Define a direção como coluna para os elementos empilharem verticalmente */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+
+
+}
+
+.buttonInicial {
+    @include padrao-botao;
+    margin-left: 2%;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        margin-top: 30%;
+        margin-bottom: 15%;
     }
 
-    .divGeral{
-        display: flex;
-        flex-direction: column; /* Define a direção como coluna para os elementos empilharem verticalmente */
-        align-items: center; /* Centraliza os elementos horizontalmente */
-      
-      
-    }
-
-    .buttonInicial{
-        background-color: rgb(0, 204, 255);
-        color: white;
-        border: none;
-        width: 40%;
+    input {
+        width: 85%;
         height: 45px;
-        text-align: center;
+        margin-bottom: 4%;
+    }
+
+    .buttonInicial {
+        width: 30%;
+        height: 30px;
         margin-top: 5%;
         margin-bottom: 10%;
     }
-
-    @media (max-width: 900px) {
-        h1{
-            margin-top: 30%;
-            margin-bottom: 15%;
-        }
-        
-        input{
-            width: 85%;
-            height: 45px;
-            margin-bottom: 4%;
-            }
-        
-            .buttonInicial{
-                width: 30%;
-                height: 30px;
-                margin-top: 5%;
-                margin-bottom: 10%;
-            }
-    }
-      
+}
